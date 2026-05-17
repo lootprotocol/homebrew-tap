@@ -5,21 +5,21 @@
 class Loot < Formula
   desc "CLI for the Loot Protocol AI Extension Marketplace"
   homepage "https://lootprotocol.com"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lootprotocol/loot-releases/releases/download/v0.4.1/lootprotocol_0.4.1_darwin_amd64.tar.gz"
-      sha256 "bf20efed7d3f8e47ce446439b5df17b8291edd797d10f26fe7d334267b13e6c3"
+      url "https://github.com/lootprotocol/loot-releases/releases/download/v0.5.0/lootprotocol_0.5.0_darwin_amd64.tar.gz"
+      sha256 "7214fe323c02c2ce21ccd8d1928336eabb10dfe13aaee305c87821f2fe0a7ec5"
 
       define_method(:install) do
         bin.install "loot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lootprotocol/loot-releases/releases/download/v0.4.1/lootprotocol_0.4.1_darwin_arm64.tar.gz"
-      sha256 "b8a37fe3aca24d4f808a1869c00e5c76929086952ca1bff8ee38d72c08cef394"
+      url "https://github.com/lootprotocol/loot-releases/releases/download/v0.5.0/lootprotocol_0.5.0_darwin_arm64.tar.gz"
+      sha256 "04cab1034b380e480fea9d9765459e1baaeccd90da12d1e42649e2790937afa5"
 
       define_method(:install) do
         bin.install "loot"
@@ -29,15 +29,15 @@ class Loot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lootprotocol/loot-releases/releases/download/v0.4.1/lootprotocol_0.4.1_linux_amd64.tar.gz"
-      sha256 "c3a9c49669bbf1b10f75736f899b56ad0dcc80dab62161fb8d505b61610418ce"
+      url "https://github.com/lootprotocol/loot-releases/releases/download/v0.5.0/lootprotocol_0.5.0_linux_amd64.tar.gz"
+      sha256 "7b742153275c69f5cc3a53cdcac178cb34c9f7e40700729b7b04929e0deec15c"
       define_method(:install) do
         bin.install "loot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lootprotocol/loot-releases/releases/download/v0.4.1/lootprotocol_0.4.1_linux_arm64.tar.gz"
-      sha256 "a5c28285ac8cf95eb95ff60a051b178ec66d4e708a538fe7536f3b2c84298226"
+      url "https://github.com/lootprotocol/loot-releases/releases/download/v0.5.0/lootprotocol_0.5.0_linux_arm64.tar.gz"
+      sha256 "af82acf4d0428bef3b35b2b64fb7027bdbb8d64bbbc69b77b5336c344125bab5"
       define_method(:install) do
         bin.install "loot"
       end
